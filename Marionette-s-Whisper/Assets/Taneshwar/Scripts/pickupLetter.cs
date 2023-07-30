@@ -7,11 +7,13 @@ using UnityEngine.UI;
 
 public class pickupLetter : MonoBehaviour
 {
+    public static pickupLetter instance;
     public GameObject collectTextObj, intText;
     public AudioSource pickupSound, ambianceLayer1, ambianceLayer2, ambianceLayer3, ambianceLayer4;
     public bool interactable;
     public static int pagesCollected;
     public Text collectText;
+    
 
     void OnTriggerStay(Collider other)
     {
